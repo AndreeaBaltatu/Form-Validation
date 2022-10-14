@@ -1,0 +1,57 @@
+.table {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 50px 100px;
+  align-content: center;
+  margin: 100px 200px;
+}
+
+figure {
+  position: relative;
+  display: flex;
+  justify-self: row;
+  align-self: flex-end;
+  width: 220px;
+  height: 220px;
+}
+.jsclass {
+  border: 2px solid red;
+}
+.disabled {
+  display: none;
+}
+.error {
+  outline: 2px solid red;
+}
+@media only screen and (max-width: 500px) {
+  .table {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
+    width: 40%;
+  }
+  figure {
+    position: relative;
+    display: flex;
+    justify-self: row;
+    align-self: flex-start;
+    width: 220px;
+    height: 220px;
+    margin-left: -80px;
+  }
+  .form1,
+  .form2,
+  .messageText,
+  .button,
+  .disabled {
+    display: flex;
+    align-self: flex-start;
+    margin-left: -80px;
+  }
+}
